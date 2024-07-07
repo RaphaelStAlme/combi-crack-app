@@ -5,7 +5,7 @@ async function getCombinations() {
 }
 
 async function postValidation(combination: string, validate: boolean) {
-  return await http.post('/combinations', {
+  return await http.post('/combinations/validate', {
     combination: combination,
     validate: validate
   })
